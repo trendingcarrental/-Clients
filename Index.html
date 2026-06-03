@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>Trending Cars Rental</title>
+  
+  <link rel="icon" type="image/png" href="apple-icon.png.png">
+  
+  <link rel="apple-touch-icon" href="apple-icon.png.png">
+
+  <style>
+    /* إزالة أي هوامش أو أشرطة تمرير مزدوجة من المتصفح */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f5f5f7; /* لون خلفية المنصة */
+    }
+  </style>
+</head>
+<body>
+
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbxDC61Xo_rPqo-OAhalyeAzKFZsM7Kl_Q9TpIF935zEbvh2i12qKClAJtZWj1xG-4HHqQ/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+      // محاولة تشغيل وضع الشاشة الكاملة
+      const iframe = document.querySelector('iframe');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen().catch((err) => {
+          console.log('وضع ملء الشاشة يتطلب تفاعل المستخدم أولاً:', err.message);
+        });
+      }
+    };
+  </script>
+</body>
+</html>
